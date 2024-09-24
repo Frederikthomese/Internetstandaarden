@@ -1,0 +1,9 @@
+body {
+background: fixed
+color(srgb rgb(255, 170, 0) rgb(18, 90, 68) rgb(16, 16, 81));
+font-family: 'Courier New', Courier, monospace;
+}
+
+img {
+    max-width: 100%;
+}
