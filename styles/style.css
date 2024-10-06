@@ -1,0 +1,225 @@
+* {
+    margin: 0%;
+    padding: 1%;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgba(248, 168, 20, 0.777);
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: rgb(196, 132, 132)
+}
+
+.logopodcast {
+    max-width: 12%  
+}
+
+ul {
+    display: flex;
+    flex-flow: row wrap;
+    flex-direction: row;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+main {
+    background-color: antiquewhite;
+}
+
+h1 {
+    color: rgb(196, 102, 102);
+    text-align: center;
+    text-decoration: underline;
+}
+
+h2 {
+    color: rgb(196, 102, 102);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+}
+
+h3 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    font-size: medium;
+    font-weight: lighter;
+}
+
+.thumbnail img {
+    max-width: 75%;
+}
+
+p {
+    display: flex;
+    justify-content: center;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+
+ul {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+li {
+    display: table-cell;
+    vertical-align: middle;
+    padding: 0 10px;
+    position: relative;
+    margin-right: 2em;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+a {
+        text-decoration: none;
+        color: rgba(196, 102, 102);
+        position: relative;
+        padding: 16px 7px;
+        border-top: 2px solid rgba(255,255,255,0);
+        border-bottom: 2px solid rgba(255,255,255,0);
+        transition: padding .3s,border-color .3s;
+      }
+      
+      a:focus, a:hover {
+        padding: 5px 7px;
+        border-color: rgba(255,255,255,1);
+        outline: none;
+      }
+      
+      a::before {
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        max-height: 0;
+        color: rgba(255,255,255,0);
+        border-left: 2px solid rgba(255,255,255,0);
+        content: attr(data-text);
+        transition: max-height .3s,border-color 0s;
+      }
+      
+      a::after {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        padding: 5px;
+        max-height: 0;
+        color: rgba(255,255,255,0);
+        border-right: 2px solid rgba(255,255,255,0);
+        content: attr(data-text);
+        transition: max-height .3s,border-color 0s;
+      }
+      
+      a:focus::before, a:hover::before, a:focus::after, a:hover::after {
+        max-height: 100%;
+        transition-delay: .28s;
+        border-color: rgba(255,255,255,1);
+      }
+
+footer {
+    display: flex;
+    justify-content: space-evenly;
+    font-size: small;
+    color: rgb(0, 0, 0)
+}
+
+p {
+    margin-right: 2em;
+}
+
+h2 {
+    text-align: center;
+}
+
+p {
+    display: flex;
+    justify-content: left;
+    font-weight: bold;
+    font-style: italic;
+}
+
+.thumbnail1 {
+    max-width: 30%;
+    float: left;
+}
+
+.thumbnail2 {
+    max-width: 30%;
+    float: left;
+}
+
+.thumbnail3 {
+    max-width: 30%;
+    float: left;
+}
+
+.telefoon {
+    max-width: 75%;
+}
+
+h4 {
+    display: flex;
+    justify-content: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bolder;
+    font-style: italic;
+}
+
+h5 {
+    display: flex;
+    justify-content: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h6 {
+    text-align: center;
+    font-size: larger;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.fotodaan {
+    max-width: 20%;
+    float: left;
+}
+
+.fotoserra {
+    max-width: 20%;
+    float: left;
+}
+
+.fotofrederik {
+    max-width: 20%;
+    float: left;
+}
+
+span {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: medium;
+}
+
+img:hover {
+    transform: scale(1);
+    animation: pulse 5s infinite;
+}
+
+@keyframes pulse {
+    25% {
+        transform: scale(0.95);
+    }
+
+    70% {
+		transform: scale(1);
+	}
+
+	100% {
+		transform: scale(0.95);
+	}
+}
